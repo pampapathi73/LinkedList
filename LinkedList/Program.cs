@@ -24,6 +24,12 @@ namespace LinkedList
             list.RemoveLastNode();
             Console.WriteLine("The list after removing last node is : ");
             list.Display();
+            list.deleteNode(40);
+
+            Console.WriteLine("\nLinked List after Deletion of 40:");
+            list.Display();
+        
+
             if (list.Search(list.head, 30))
                 Console.WriteLine("Yes");
             else

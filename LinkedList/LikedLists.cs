@@ -80,7 +80,36 @@ namespace LinkedList
             }
             return false;
         }
-            internal void Display()
+       public void deleteNode(int key)
+        {
+            
+            Node temp = head, prev = null;
+
+            
+            if (temp != null &&
+                temp.data == key)
+            {
+                
+                head = temp.next;
+                return;
+            }
+
+        
+            while (temp != null &&
+                   temp.data != key)
+            {
+                prev = temp;
+                temp = temp.next;
+            }
+
+            
+            if (temp == null)
+                return;
+
+            
+            prev.next = temp.next;
+        }
+        internal void Display()
         {
             if (this.head == null)
                 Console.WriteLine("The list is empty.");
