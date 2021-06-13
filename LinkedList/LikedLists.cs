@@ -7,7 +7,7 @@ namespace LinkedList
     class LikedLists
     {
         internal Node head;
-        internal void Add(int data)
+            internal void Append(int data)
         {
             Node node = new Node(data);
             if (this.head == null)
@@ -21,8 +21,10 @@ namespace LinkedList
                 }
                 temp.next = node;
             }
-           
+
         }
+
+    
         internal void Display()
         {
             if (this.head == null)
