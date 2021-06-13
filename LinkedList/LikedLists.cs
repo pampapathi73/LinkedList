@@ -46,9 +46,14 @@ namespace LinkedList
                 temp.next = node;
             }
         }
-
-
-            internal void Display()
+        internal Node RemoveFirstNode()
+        {
+            if (this.head == null)
+                return null;
+            this.head = this.head.next;
+            return this.head;
+        }
+        internal void Display()
         {
             if (this.head == null)
                 Console.WriteLine("The list is empty.");
@@ -61,6 +66,8 @@ namespace LinkedList
                     temp = temp.next;
                 }
             }
+
+
         }
     }
 }
