@@ -15,6 +15,9 @@ namespace LinkedList
             list.InsertAtParticularPosition(2, 30);
             Console.WriteLine("The list after inserting 30 is : ");
             list.Display();
+            list.InsertAtParticularPosition(3, 40);
+            Console.WriteLine("The list after inserting 30 is : ");
+            list.Display();
             list.RemoveFirstNode();
             Console.WriteLine("The list after removing first node is : ");
             list.Display();
