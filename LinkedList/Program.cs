@@ -21,6 +21,11 @@ namespace LinkedList
             list.RemoveLastNode();
             Console.WriteLine("The list after removing last node is : ");
             list.Display();
+            if (list.Search(list.head, 30))
+                Console.WriteLine("Yes");
+            else
+                Console.WriteLine("No");
+
         }
     }
 }

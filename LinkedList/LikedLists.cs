@@ -46,6 +46,8 @@ namespace LinkedList
                 temp.next = node;
             }
         }
+
+
         internal Node RemoveFirstNode()
         {
             if (this.head == null)
@@ -67,7 +69,18 @@ namespace LinkedList
             newNode.next = null;
             return head;
         }
-        internal void Display()
+        public bool Search(Node head, int x)
+        {
+            Node current = head; 
+            while (current != null)
+            {
+                if (current.data == x)
+                    return true; 
+                current = current.next;
+            }
+            return false;
+        }
+            internal void Display()
         {
             if (this.head == null)
                 Console.WriteLine("The list is empty.");
